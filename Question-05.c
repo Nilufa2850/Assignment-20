@@ -21,3 +21,24 @@ int max (int* p , int *q)
     else 
         return *q ;
 }
+
+// .......................................2nd method .............................................
+
+int main ()
+{
+    int a , b , *p , *q ;
+
+    p = &a ;
+    q = &b ;
+
+    printf("Enter two numbers : ");
+    scanf("%d%d",p,q);
+
+    if (*p > *q)
+        printf("maximum number is %d",*p);
+    else 
+        printf("maximum number is %d",*q);
+
+
+    return 0 ;
+}
